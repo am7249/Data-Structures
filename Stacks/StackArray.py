@@ -10,6 +10,7 @@ class Empty(Exception):
     pass
 
 class Stack:
+    CAP =10
     """Implementation of Stack using an array"""
 
     def __init__(self):
@@ -61,8 +62,5 @@ if __name__ == "__main__":
     top = stack.top() #display the top element
     print(top)
     
-    for i in range(3): #check if the code raises an error when you try to delete elements from an empty stack
+    for i in range(7): #check if the code raises an error when you try to delete elements from an empty stack
         stack.pop()
-    
-    stack.display()
-    stack.top()
